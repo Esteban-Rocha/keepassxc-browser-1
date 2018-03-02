@@ -18,7 +18,7 @@ $(function() {
             options.initMenu();
             options.initGeneralSettings();
             options.initConnectedDatabases();
-            options.initSpecifiedCredentialFields();
+            options.initCustomCredentialFields();
             options.initIgnoredSites();
             options.initAbout();
         });
@@ -214,18 +214,18 @@ options.initConnectedDatabases = function() {
     });
 };
 
-options.initSpecifiedCredentialFields = function() {
-    $('#dialogDeleteSpecifiedCredentialFields').modal({keyboard: true, show: false, backdrop: true});
-    $('#tab-specified-fields tr.clone:first button.delete:first').click(function(e) {
+options.initCustomCredentialFields = function() {
+    $('#dialogDeleteCustomCredentialFields').modal({keyboard: true, show: false, backdrop: true});
+    $('#tab-custom-fields tr.clone:first button.delete:first').click(function(e) {
         e.preventDefault();
-        $('#dialogDeleteSpecifiedCredentialFields').data('url', $(this).closest('tr').data('url'));
-        $('#dialogDeleteSpecifiedCredentialFields').data('tr-id', $(this).closest('tr').attr('id'));
-        $('#dialogDeleteSpecifiedCredentialFields .modal-body:first strong:first').text($(this).closest('tr').children('td:first').text());
-        $('#dialogDeleteSpecifiedCredentialFields').modal('show');
+        $('#dialogDeleteCustomCredentialFields').data('url', $(this).closest('tr').data('url'));
+        $('#dialogDeleteCustomCredentialFields').data('tr-id', $(this).closest('tr').attr('id'));
+        $('#dialogDeleteCustomCredentialFields .modal-body:first strong:first').text($(this).closest('tr').children('td:first').text());
+        $('#dialogDeleteCustomCredentialFields').modal('show');
     });
 
-    $('#dialogDeleteSpecifiedCredentialFields .modal-footer:first button.yes:first').click(function(e) {
-        $('#dialogDeleteSpecifiedCredentialFields').modal('hide');
+    $('#dialogDeleteCustomCredentialFields .modal-footer:first button.yes:first').click(function(e) {
+        $('#dialogDeleteCustomCredentialFields').modal('hide');
 
         const url = $('#dialogDeleteSpecifiedCredentialFields').data('url');
         const trId = $('#dialogDeleteSpecifiedCredentialFields').data('tr-id');
@@ -234,10 +234,10 @@ options.initSpecifiedCredentialFields = function() {
         delete options.settings['defined-credential-fields'][url];
         options.saveSettings();
 
-        if ($('#tab-specified-fields table tbody:first tr').length > 2) {
-            $('#tab-specified-fields table tbody:first tr.empty:first').hide();
+        if ($('#tab-custom-fields table tbody:first tr').length > 2) {
+            $('#tab-custom-fields table tbody:first tr.empty:first').hide();
         } else {
-            $('#tab-specified-fields table tbody:first tr.empty:first').show();
+            $('#tab-custom-fields table tbody:first tr.empty:first').show();
         }
     });
 
@@ -254,10 +254,10 @@ options.initSpecifiedCredentialFields = function() {
         $('#tab-specified-fields table tbody:first').append(tr);
     }
 
-    if ($('#tab-specified-fields table tbody:first tr').length > 2) {
-        $('#tab-specified-fields table tbody:first tr.empty:first').hide();
+    if ($('#tab-custom-fields table tbody:first tr').length > 2) {
+        $('#tab-custom-fields table tbody:first tr.empty:first').hide();
     } else {
-        $('#tab-specified-fields table tbody:first tr.empty:first').show();
+        $('#tab-custom-fields table tbody:first tr.empty:first').show();
     }
 };
 
