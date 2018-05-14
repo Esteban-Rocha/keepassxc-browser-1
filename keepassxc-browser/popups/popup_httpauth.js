@@ -38,7 +38,7 @@ $(function() {
         browser.runtime.sendMessage({
             action: 'lock-database'
         }).then(status_response);
-	});
+    });
 
     $('#btn-dismiss').click(function() {
         getLoginData().then((data) => {

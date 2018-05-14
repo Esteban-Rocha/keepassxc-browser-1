@@ -318,4 +318,3 @@ browserAction.ignoreSite = function(url) {
         });
     });
 };
-

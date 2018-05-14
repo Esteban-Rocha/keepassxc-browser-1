@@ -47,15 +47,19 @@
 				"*://*/*.xsd"
 			],
 			"js": [
+				"autocomplete.js",
 				"browser-polyfill.min.js",
+				"define.js",
 				"global.js",
-				"jquery-3.3.1.min.js",
-				"jquery-ui.min.js",
-				"keepassxc-browser.js"
+				"keepassxc-browser.js",
+				"pwgen.js",
+				"ui.js"
 			],
 			"css": [
-				"jquery-ui.min.css",
-				"keepassxc-browser.css"
+				"autocomplete.css",
+				"define.css",
+				"pwgen.css",
+				"w3.css"
 			],
 			"run_at": "document_idle",
 			"all_frames": true

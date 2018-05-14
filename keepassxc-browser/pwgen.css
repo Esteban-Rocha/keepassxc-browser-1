@@ -1,0 +1,60 @@
+.kpxc .w3-card-4 {
+    padding-bottom: 8px !important;
+    background-color: #fff;
+}
+
+.kpxc .w3-btn {
+	margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.kpxc .w3-green, .w3-hover-green:hover {
+    background-color: #6cac4d !important;
+}
+
+.kpxc #ui-titlebar {
+	font-family: 'Lato', sans-serif;
+    background-color: #6cac4d !important;
+    color: #fff;
+    padding: .4em 1em;
+    position: relative;
+    cursor: move;
+}
+
+.kpxc #ui-close {
+    background-color: #6cac4d !important;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.kpxc #ui-close:hover {
+    background-color: #6cac4d !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.kpxc #ui-titlebar:hover {
+    cursor: move;
+}
+
+.kpxc #kpxc-pw-dialog {
+    width: 350px;
+    position: absolute !important;
+}
+
+.kpxc-genpw-icon {
+    position: absolute;
+    cursor: pointer;
+}
+
+.kpxc-genpw-icon.key {
+    background: url('chrome-extension://__MSG_@@extension_id__/icons/key.png') right no-repeat;
+    background-size: contain;
+}
+
+.kpxc-genpw-icon.key-moz {
+    background: url('moz-extension://__MSG_@@extension_id__/icons/key.png') right no-repeat;
+    background-size: contain;
+}
