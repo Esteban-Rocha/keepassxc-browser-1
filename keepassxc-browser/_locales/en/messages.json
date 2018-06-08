@@ -73,7 +73,7 @@
     },
     "errorMessageEncryptionKey": {
         "message": "Encryption key is not recognized.",
-        "description": "Encryption key is not recognized"
+        "description": "Encryption key is not recognized."
     },
     "errorMessageSavedDatabases": {
         "message": "No saved databases found.",
@@ -208,11 +208,11 @@
         "description": "Alert message when no fields are found to fill in."
     },
     "fieldsNoPasswordField": {
-        "message": "Error:\nUnable to find a password field",
+        "message": "Error:\nUnable to find a password field.",
         "description": "Message shown when no password fields are found."
     },
     "rememberNothingChanged": {
-        "message": "Error:\nCould not detect changed credentials",
+        "message": "Error:\nCould not detect changed credentials.",
         "description": "Message shown when trying to save credentials that haven't changed."
     },
     "popupTitle": {
@@ -441,7 +441,7 @@
     },
     "optionsCheckboxAutoFillSingleEntry": {
         "message": "Automatically fill in single-credentials entries.",
-        "description": "Automatically fill-in single credentials entry checbox text."
+        "description": "Automatically fill-in single credentials entry checkbox text."
     },
     "optionsCheckboxAutoCompleteUsernames": {
         "message": "Activate autocomplete for username fields.",
@@ -461,7 +461,7 @@
     },
     "optionsCheckboxAutoFillAndSend": {
         "message": "Automatically fill in HTTP Basic Auth dialogs and submit them.",
-        "description": "Auto fill HTTP Auth dialogs and send them checkbox text."
+        "description": "Auto fill HTTP Basic Auth dialogs and send them checkbox text."
     },
     "optionsRadioText": {
         "message": "Check for updates of KeePassXC:",
@@ -549,7 +549,7 @@
     },
     "optionsAutoFillAndSendHelpTextSecond": {
         "message": "An HTTP Basic Auth dialog looks like this:",
-        "description": "HTTP Authentication image help text."
+        "description": "HTTP Basic Auth image help text."
     },
     "optionsVersionInfoText": {
         "message": "KeePassXC-Browser needs KeePassXC to retrieve credentials.",
